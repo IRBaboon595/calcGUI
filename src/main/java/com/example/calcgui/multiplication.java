@@ -2,10 +2,10 @@ package com.example.calcgui;
 
 import java.util.ArrayList;
 
-public class subtraction implements mathOperation
+public class multiplication implements mathOperation
 {
-    public subtraction(){}
-    public subtraction(double first, double second)
+    public multiplication(){}
+    public multiplication(double first, double second)
     {
         m_firstNum = first;
         m_secondNum = second;
@@ -13,7 +13,7 @@ public class subtraction implements mathOperation
 
     @Override
     public double run(){
-        double result = m_firstNum - m_secondNum;
+        double result = m_firstNum * m_secondNum;
         return result;
     }
 
