@@ -37,7 +37,7 @@
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="/" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_divButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="/" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -90,7 +90,7 @@
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="*" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_multButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="*" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -144,7 +144,7 @@
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_subsButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="-" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_subsButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="-" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -198,7 +198,7 @@
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_addButton" mnemonicParsing="false" onMouseClicked="#onPlusClicked" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="+" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_addButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="+" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>

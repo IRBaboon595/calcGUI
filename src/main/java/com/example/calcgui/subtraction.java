@@ -2,7 +2,7 @@ package com.example.calcgui;
 
 import java.util.ArrayList;
 
-public class subtraction implements mathOperation
+public class subtraction extends mathAction
 {
     public subtraction(){}
     public subtraction(double first, double second)
@@ -23,7 +23,4 @@ public class subtraction implements mathOperation
         m_firstNum = al.get(0);
         m_secondNum = al.get(1);
     }
-
-    double m_firstNum = 0;
-    double m_secondNum = 0;
 }

@@ -2,7 +2,11 @@ package com.example.calcgui;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
@@ -130,14 +134,36 @@ public class Controller {
     }
 
     @FXML
-    void onPlusClicked(){
+    public void btnCell(ActionEvent actionEvent) {
+        String source = actionEvent.getSource().toString();
+        int bInd = source.indexOf("id=") + 3;
+        int eInd = source.indexOf(",", bInd);
+        String id = source.substring(bInd, eInd);
+        System.out.println(id);
         double num = 0;
+
         try{
             num = Double.parseDouble(m_resLabel.getText());
 
-            if(ma == null)
-            {
-                ma = new addition();
+            if(ma == null) {
+                switch (id){
+                    case "m_addButton":
+                        ma = new addition();
+                        break;
+                    case "m_subsButton":
+                        ma = new subtraction();
+                        break;
+                    case "m_multButton":
+                        ma = new multiplication();
+                        break;
+                    case "m_divButton":
+                        ma = new division();
+                        break;
+                    default:
+                        System.out.println("Unknown source");
+                        break;
+                }
+
                 ma.m_firstNum = num;
                 m_textBuilder.delete(0, m_textBuilder.capacity() - 1);
                 m_resLabel.setText(m_textBuilder.toString());
@@ -152,3 +178,6 @@ public class Controller {
         }
     }
 }
+
+
+

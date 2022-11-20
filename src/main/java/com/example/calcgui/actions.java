@@ -1,8 +1,8 @@
 package com.example.calcgui;
 
 public enum actions {
-    ADDITION,
-    SUBTRACTION,
-    MULTIPLICATION,
-    DIVISION
+    m_addButton,
+    m_subsButton,
+    m_multButton,
+    m_divButton
 }

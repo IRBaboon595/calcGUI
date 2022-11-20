@@ -2,7 +2,7 @@ package com.example.calcgui;
 
 import java.util.ArrayList;
 
-public class division implements mathOperation
+public class division extends mathAction
 {
     public division(){}
     public division(double first, double second)
@@ -23,7 +23,4 @@ public class division implements mathOperation
         m_firstNum = al.get(0);
         m_secondNum = al.get(1);
     }
-
-    double m_firstNum = 0;
-    double m_secondNum = 0;
 }
