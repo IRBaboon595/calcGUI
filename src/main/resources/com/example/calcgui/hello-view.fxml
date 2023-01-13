@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #1F1F1F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calcgui.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #2F2F2F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calcgui.Controller">
    <children>
       <Label fx:id="m_resLabel" layoutX="20.0" layoutY="14.0" prefHeight="90.0" prefWidth="870.0" text="Calculator" textAlignment="CENTER" textFill="WHITE">
          <font>
@@ -22,52 +22,52 @@
          <children>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="312.0" style="-fx-spacing: 20;">
                <children>
-                  <Button fx:id="m_allClearButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #DFDFDF; -fx-background-radius: 45;" text="AC" textAlignment="CENTER">
+                  <Button fx:id="m_allClearButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #DFDFDF; -fx-background-radius: 45;" text="AC" textAlignment="CENTER">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #DFDFDF; -fx-background-radius: 45;" text="+/-" textAlignment="CENTER">
+                  <Button fx:id="m_changeSign" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #DFDFDF; -fx-background-radius: 45;" text="+/-" textAlignment="CENTER">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #DFDFDF; -fx-background-radius: 45;" text="\%" textAlignment="CENTER">
+                  <Button fx:id="m_percent" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #DFDFDF; -fx-background-radius: 45;" text="\%" textAlignment="CENTER">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_divButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="/" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_divButton" mnemonicParsing="false" onAction="#btnCell" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="/" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="mr" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="mr" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="m-" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="m-" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="m+" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="m+" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="mc" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="mc" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="(" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="(" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text=")" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text=")" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -75,52 +75,52 @@
                </children></HBox>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="312.0" style="-fx-spacing: 20;">
                <children>
-                  <Button fx:id="m_sevenButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="7" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_sevenButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="7" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_eightButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="8" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_eightButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="8" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_nineButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="9" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_nineButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="9" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_multButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="*" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_multButton" mnemonicParsing="false" onAction="#btnCell" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="*" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="10^x" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="10^x" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
                      <font>
                         <Font name="Times New Roman" size="14.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="e^x" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="e^x" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="3pw" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="3pw" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="3pw" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="3pw" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="2pw" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="2pw" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="2nd" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="2nd" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="17.0" />
                      </font>
@@ -129,52 +129,52 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="312.0" style="-fx-spacing: 20;">
                <children>
-                  <Button fx:id="m_fourButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="4" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_fourButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="4" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_fiveButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="5" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_fiveButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="5" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_sixButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="6" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_sixButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="6" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_subsButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="-" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_subsButton" mnemonicParsing="false" onAction="#btnCell" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="-" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="log" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="log" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="ln" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="ln" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="yrt" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="yrt" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="cbrt" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="cbrt" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="sqrt" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="sqrt" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="1/x" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="1/x" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -183,52 +183,52 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="312.0" style="-fx-spacing: 20;">
                <children>
-                  <Button fx:id="m_oneButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="1" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_oneButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="1" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_twoButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="2" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_twoButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="2" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_threeButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="3" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_threeButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="3" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_addButton" mnemonicParsing="false" onAction="#btnCell" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="+" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_addButton" mnemonicParsing="false" onAction="#btnCell" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="+" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="EE" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="EE" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="e" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="e" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="tan" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="tan" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="cos" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="cos" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="sin" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="sin" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="x!" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="x!" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
@@ -237,47 +237,47 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="312.0" style="-fx-spacing: 20;">
                <children>
-                  <Button fx:id="m_zeroButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="0" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_zeroButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="0" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_dotButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="." textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_dotButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="." textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m_equalsButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="=" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="m_equalsButton" mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #Ad04Cf; -fx-background-radius: 45;" text="=" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="Rand" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="Rand" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="14.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="π" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="π" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="tanh" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="tanh" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="Times New Roman" size="18.0" />
+                        <Font name="Times New Roman" size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="cosh" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="cosh" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="Times New Roman" size="18.0" />
+                        <Font name="Times New Roman" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="sinh" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="sinh" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="Times New Roman" size="18.0" />
+                        <Font name="Times New Roman" size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="Rad" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="39.0" prefWidth="50.0" style="-fx-background-color: #3F3F3F; -fx-background-radius: 45;" text="Rad" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="17.0" />
                      </font>
